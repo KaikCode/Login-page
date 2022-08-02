@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #D93D66;
+    --cor2: #D97398;
+    --cor3: #D98FAA;
+    --cor4: #F2C9E0;
+    --cor5: #F2D5E5;
+}
+
+
+:root {
+    --main: #034159;
+    --h1: #025951;
+    --h2: #02735E;
+    --p: #038C3E;
+    --color: #0CF25D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor5));
+}
+
+main {
+    transition: 3s;
+    background-color: var(--h1);
+    width: 600px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 0 20px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid rgba(0, 0, 0, 0.300);
+    border-left: 1px solid rgba(0, 0, 0, 0.300);
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 350px;
+        transition: 2s;
+    }
+
+    main h1 {
+        position: relative;
+        right: 30px;
+        margin: auto;
+    }
+  }
+
+main h1 {
+    background-color: var(--h1);
+    color: var(--cor4);
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 350px;
+    border-top: 8px solid rgba(0, 0, 0, 0.100);
+    border-bottom: 2px solid black;
+    font-size: 2.4em;
+    text-shadow: 4px 5px 15px rgba(0, 0, 0, 0.400);
+    position: relative;
+    bottom: 60px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+form input {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: hidden;
+    position: relative;
+}
+
+button {
+    border-radius: 10px;
+    background-color: var(--p);
+    margin: 10px;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 0.8em;
+}
+
+button:hover, input:hover {
+    box-shadow: inset 1px 3px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid;
+}
+
+form .message {
+    text-align: end;
+    margin: 10px 0 0 0;
+    color: #b3b3b3;
+    padding-top: 10px;
+}
+
+form .message a {
+    text-decoration: none;
+    color: white;
+}
+
+form .message a:hover, .remember:hover {
+    color: var(--color);
+    box-shadow: inset 1px 3px 12px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+form .remember {
+    margin-bottom: 20px;
+    color: white;
+    padding-top: 10px;
+}
